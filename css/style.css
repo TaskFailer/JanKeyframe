@@ -1,14 +1,69 @@
-.ball {
-    animation: ball 2s;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.arrow {
+    animation: ballGravity 2s;
+    animation-iteration-count: infinite;
+    height: 70px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    border: 1px black solid;
+    animation: ballReact 2s;
     animation-iteration-count: infinite;
 }
 
-@keyframes ball {
-    from {
-        top: 100px;
-    }
+.ball {
+    animation: ballBounce 2s cubic-bezier(0.305, 1.155, 0.745, -0.150);
+    animation-iteration-count: infinite;
+}
 
+@keyframes ballBounce {
+    from {
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+    50% {
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
     to {
-        top: 200px;
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+}
+
+@keyframes ballReact {
+    from {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+}
+
+@keyframes ballGravity {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(170deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
