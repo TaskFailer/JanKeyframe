@@ -1,21 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+
+
 .slidebox{
+    margin-top: 20px;
     height: 200px;
     width: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: 1px black solid;
-    animation: slide 3s;
+    animation: slide 1s forwards;
+}
+
+.slidetext {
+    animation: slide2 2s forwards;
 }
 
 @keyframes slide {
     from {
         opacity: 0;
-        left: 0px;
+        margin-left: 0px;
+    }
+
+    20% {
+        opacity: 0;
+        margin-left: 5px;
     }
 
     to {
         opacity: 100;
-        left: 20%;
+        margin-left: 20px;
+    }
+}
+
+@keyframes slide2 {
+    from {
+        opacity: 0;
+        margin-left: -20px;
+    }
+
+    20% {
+        opacity: 0;
+        margin-left: -15px;
+    }
+
+    to {
+        opacity: 100;
+        margin-left: 0px;
     }
 }
