@@ -5,4 +5,17 @@
     justify-content: space-around;
     align-items: center;
     border: 1px black solid;
+    animation: slidebox 3s;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        left: -50%;
+    }
+
+    to {
+        opacity: 0;
+        left: 20%;
+    }
 }
