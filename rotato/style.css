@@ -5,6 +5,11 @@
 
 .box{
     margin: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px black solid;
 }
 
 .spinner:hover {
