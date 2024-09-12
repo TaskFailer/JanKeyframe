@@ -4,15 +4,13 @@
 }
 
 p {
-    font-size: 1.4em;
+    font-size: 3vw;
 }
-
-
 
 .slidebox{
     margin-top: 20px;
     height: 200px;
-    width: 200px;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,12 +30,11 @@ p {
 
     20% {
         opacity: 0;
-        margin-left: 5px;
     }
 
     to {
         opacity: 100;
-        margin-left: 20px;
+        margin: 20px 30% ;
     }
 }
 
