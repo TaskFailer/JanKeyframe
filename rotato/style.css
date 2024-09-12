@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.box{
+    margin: 20px;
+}
+
 .spinner {
     animation: Spin 3s;
 }
