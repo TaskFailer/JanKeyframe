@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="cursor"></div>
+    <div class="cursor2"></div>
 
     <script type="text/javascript">
         const cursor = document.querySelector(".cursor");
@@ -15,8 +16,16 @@
             let x = e.pageX;
             let y = e.pageY;
 
-            cursor.style.top = y - 10 + "px";
-            cursor.style.left = x - 10 + "px";
+            cursor.style.top = y - 7 + "px";
+            cursor.style.left = x - 6 + "px";
+        });
+        const cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove", (e) => {
+            let x2 = e.pageX;
+            let y2 = e.pageY;
+
+            cursor2.style.top = y2 - 10 + "px";
+            cursor2.style.left = x2 - 100 + "px";
         });
     </script>
 </body>
