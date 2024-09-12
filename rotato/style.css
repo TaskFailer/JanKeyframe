@@ -7,7 +7,7 @@
     margin: 20px;
 }
 
-.spinner {
+.spinner:hover {
     animation: Spin 3s;
 }
 
