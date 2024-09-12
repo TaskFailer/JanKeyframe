@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+}
+
 .box{
     margin: 20px;
     height: 200px;
@@ -13,7 +19,7 @@
 }
 
 .spinner:hover {
-    animation: Spin 3s;
+    animation: Spin 1s;
 }
 
 @keyframes Spin {
@@ -21,11 +27,11 @@
         transform: rotate(0deg);
     }
 
-    15% {
+    20% {
         transform: rotate(-10deg);
     }
 
     to {
-        transform: rotate(360deg);
+        transform: rotate(360deg) ;
     }
 }
