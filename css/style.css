@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+.circle {
+    display: block;
+    background: black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+  }
+
 .arrow {
     animation: ballGravity 2s;
     animation-iteration-count: infinite;
@@ -12,6 +21,7 @@
 .box {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 10px;
     border: 1px black solid;
     animation: ballReact 2s;
