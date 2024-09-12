@@ -5,6 +5,7 @@
 
 p {
     font-size: 3vw;
+    text-align: center;
 }
 
 .slidebox{
@@ -25,11 +26,7 @@ p {
 @keyframes slide {
     from {
         opacity: 0;
-        margin-left: 0px;
-    }
-
-    20% {
-        opacity: 0;
+        margin-left: -10%;
     }
 
     to {
@@ -41,12 +38,12 @@ p {
 @keyframes slide2 {
     from {
         opacity: 0;
-        margin-left: -20px;
+        margin-left: -40px;
     }
 
-    20% {
+    10% {
         opacity: 0;
-        margin-left: -15px;
+        margin-left: -35px;
     }
 
     to {
