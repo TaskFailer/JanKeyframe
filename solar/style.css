@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .circle {
@@ -11,4 +12,47 @@
     width: 10px;
     margin-left: (at calc(var(--mouse-x, 0) * 100%));
     margin-top: var(--mouse-y);
+}
+
+/* trying something out */
+body {
+    height: 100vh;
+    background: #000115;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursor {
+    z-index: 999;
+    width: 20px;
+    height: 20px;
+    background: #2696E8;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696E8,
+                0 0 60px #2696E8,
+                0 0 100px #2696E8;
+    animation: colors 5s infinite;
+}
+
+@keyframes colors{
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before {
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
 }
