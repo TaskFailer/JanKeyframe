@@ -7,8 +7,17 @@
     <title>Supernova</title>
 </head>
 <body>
-    <div class="slidebox">
-        <p class="slidetext">Oh Hello there!<br><br> How are you?</p>
-    </div>
+    <figure class="circle"></figure>
+
+    <script>
+        const root = document.documentElement;
+        document.addEventListener('mousemove', evt => {
+            let x = evt.clientX / innerWidth;
+            let y = evt.clientY / innerHeight;
+        
+            root.style.setProperty('--mouse-x', x);
+            root.style.setProperty('--mouse-y', y);
+        });
+    </script>
 </body>
 </html>
