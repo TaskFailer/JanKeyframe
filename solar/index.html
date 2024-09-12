@@ -7,18 +7,16 @@
     <title>Supernova</title>
 </head>
 <body>
-    <figure class="circle"></figure>
-
     <div class="cursor"></div>
 
-    <script>
-        const root = document.documentElement;
-        document.addEventListener('mousemove', evt => {
-            let x = evt.clientX / innerWidth;
-            let y = evt.clientY / innerHeight;
-        
-            root.style.setProperty('--mouse-x', x);
-            root.style.setProperty('--mouse-y', y);
+    <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        document.addEventListener("mousemove", (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+
+            cursor.style.top = y + "px";
+            cursor.style.left = x + "px";
         });
     </script>
 </body>
