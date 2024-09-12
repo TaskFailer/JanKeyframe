@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.spinner {
+    animation: Spin 3s;
+}
+
+@keyframes Spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(-10deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
