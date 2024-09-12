@@ -18,8 +18,8 @@
     border: 1px black solid;
 }
 
-.spinner:hover {
-    animation: Spin 1s;
+.spinner {
+    animation: Spin 1s forwards;
 }
 
 @keyframes Spin {

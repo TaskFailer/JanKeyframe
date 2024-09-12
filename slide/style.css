@@ -1,21 +1,21 @@
 .slidebox{
-    margin: 20px;
     height: 200px;
+    width: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: 1px black solid;
-    animation: slidebox 3s;
+    animation: slide 3s;
 }
 
 @keyframes slide {
     from {
         opacity: 0;
-        left: -50%;
+        left: 0px;
     }
 
     to {
-        opacity: 0;
+        opacity: 100;
         left: 20%;
     }
 }
