@@ -1,8 +1,14 @@
+.ball {
+    animation: ball 2s;
+    animation-iteration-count: infinite;
+}
+
 @keyframes ball {
     from {
-        transform: translateX(0%);
+        top: 100px;
     }
+
     to {
-        transform: translateX(100%);
+        top: 200px;
     }
 }
